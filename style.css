@@ -88,15 +88,20 @@ search {
 .element-main {
     height: 20%;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 5px;
+    display: flex;
+}
+
+#pd-container {
+    display: flex;
+    gap: 1rem;
+    width: 70%;
 }
 
 .contact-profile {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    width: 20%;
 }
 
 .profile-picture {
@@ -112,7 +117,8 @@ search {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 15px;
+    padding: 10px;
+    width: 80%;
 }
 
 .profile-name {
@@ -129,9 +135,9 @@ search {
 
 .contact-icons {
     height: 100%;
-    width: 100%;
+    width: 30%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     gap: 20px;
 }
@@ -184,12 +190,12 @@ container {
 }
 
 #info {
-    width: 10%;
-    height: 100%;
+    width: 7%;
+    height: 110%;
     background-color: #E8863B;
     border-radius: 30px;
     position: absolute;
-    top: -40px;
+    top: -50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,7 +214,7 @@ container {
 
 @media (max-width:1500px) {
     .profile-picture {
-        max-width: 55%;
+        max-width: 110%;
     }
 
     .fa-solid {
@@ -231,24 +237,55 @@ container {
         padding: 20px;
     }
 
-    .element-main {
-        grid-template-columns: repeat(5,1fr);
+    #info {
+        min-width: 8%;
     }
+
+    /*.element-main {
+        grid-template-columns: repeat(4,1fr);
+    }*/
 }
 
 @media (max-width:1000px) {
     .profile-picture {
         max-width: 60%;
     }
-}
 
-@media (max-width:810px) {
+    #info {
+        min-width: 11%;
+    }
+
     .profile-picture {
-        max-width: 70%;
+        max-width: 130%;
+    }
+
+    #pd-container {
+        gap: 3rem;
     }
 }
 
-@media (max-width:700px) {
+@media (max-width:860px) {
+    .profile-picture {
+        max-width: 165%;
+    }
+
+    #info {
+        min-width: 14%;
+    }
+
+    #header-icons {
+        width: 20%;
+    }
+
+    #pd-container {
+        gap: 4rem;
+    }
+
+
+    
+}
+
+@media (max-width:713px) {
     .profile-picture {
         max-width: 80%;
     }
@@ -259,5 +296,3 @@ container {
         max-width: 90%;
     }
 }
-
-
