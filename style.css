@@ -35,6 +35,14 @@ header {
     top: 0;
 }
 
+#header-icons {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    height: 100%;
+    width: 15%;
+}
+
 #header-2 {
     display: flex;
     padding: 5px;
@@ -98,11 +106,6 @@ search {
     border-radius: 25px;
 }
 
-@media (max-width:1000px) {
-    .profile-picture {
-        max-width: 60%;
-    }
-}
 
 .contact-details {
     grid-column: 2/4;
@@ -110,6 +113,18 @@ search {
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
+}
+
+.profile-name {
+    color: #696878;
+}
+
+.profile-id {
+    color: #A1A2B4;
+}
+
+.profile-designation {
+    color: #2D4F6B;
 }
 
 .contact-icons {
@@ -190,3 +205,59 @@ container {
     border-radius: 100%;
     border: 2px solid white;
 }
+
+@media (max-width:1500px) {
+    .profile-picture {
+        max-width: 55%;
+    }
+
+    .fa-solid {
+        font-size: large;
+    }
+
+    .contact-icons {
+        gap: 50px;
+    }
+
+    #header-text {
+        font-size:x-large;
+    }
+
+    #header-time {
+        font-size: larger;
+    }
+
+    #chats-container {
+        padding: 20px;
+    }
+
+    .element-main {
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+
+@media (max-width:1000px) {
+    .profile-picture {
+        max-width: 60%;
+    }
+}
+
+@media (max-width:810px) {
+    .profile-picture {
+        max-width: 70%;
+    }
+}
+
+@media (max-width:700px) {
+    .profile-picture {
+        max-width: 80%;
+    }
+}
+
+@media (max-width:570px) {
+    .profile-picture {
+        max-width: 90%;
+    }
+}
+
+
