@@ -216,6 +216,13 @@ container {
 }
 
 @media (min-width:456px) {
+
+    #info {
+        height: 90%;
+        width: 5rem;
+        top: -40px;
+    }
+
     #header-icons {
         width: 25%;
         grid-gap: 15px;
@@ -281,18 +288,84 @@ container {
 @media (min-width:620px) {
 
     #header-icons {
-        width: 30%;
-        
+        width: 20%;
+        grid-gap: 15px;
     }
 
 }
 
 @media (min-width:768px) {
 
+    #info {
+        height: 110%;
+        width: 6rem;
+        top: -50px;
+    }
+
+    .fa-solid {
+        font-size:large;
+    }
+
+    #header-time {
+        font-size: large;
+    }
+
+    #header-text {
+        font-size: x-large;
+
+    }
+
+    .element-main {
+        height: 20%;
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+
+    .profile-name {
+        font-size: large;
+    }
+
+    .profile-id{
+        font-size: medium;
+    }
+
+    .profile-designation {
+        font-size: medium;
+    }
+
+    .contact-details {
+        padding-top: 17px;
+        padding-bottom: 15px;
+    }
+
 }
 
 @media (min-width:1024px) {
 
+    #header-icons {
+        width: 15%;
+        grid-gap: 15px;
+    }
+
+    .footer-text{
+        font-size: medium;
+    }
+
+    .footer-images {
+        width: 18%;
+    }
+
+    .profile-name {
+        font-size: x-large;
+    }
+
+    .profile-id{
+        font-size: large;
+    }
+
+    .profile-designation {
+        font-size: large;
+    }
 }
 
 @media (min-width:1280px) {
@@ -300,5 +373,18 @@ container {
 }
 
 @media (min-width:1536px) {
+
+    #header-icons {
+        width: 10%;
+        grid-gap: 15px;
+    }
+
+    .fa-solid {
+        font-size:x-large;
+    }
+
+    #header-time {
+        font-size: x-large;
+    }
 
 }
